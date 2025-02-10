@@ -1,5 +1,7 @@
 
 import { Brain, Puzzle, Calculator } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Button } from "./ui/button";
 
 export const Hero = () => {
   return (
@@ -47,9 +49,13 @@ export const Hero = () => {
           ))}
         </div>
 
-        <button className="animate-fade-up bg-accent hover:bg-accent-light text-white font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105">
-          Start Learning Now
-        </button>
+        <Link to="/games">
+          <Button 
+            className="animate-fade-up bg-accent hover:bg-accent-light text-white font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105"
+          >
+            Start Learning Now
+          </Button>
+        </Link>
       </div>
     </div>
   );
