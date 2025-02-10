@@ -9,6 +9,9 @@ import Games from "./pages/Games";
 import Leaderboard from "./pages/Leaderboard";
 import Profile from "./pages/Profile";
 import NotFound from "./pages/NotFound";
+import MathGame from "./pages/games/MathGame";
+import DailyChallenge from "./pages/games/DailyChallenge";
+import TutorialPage from "./pages/games/TutorialPage";
 
 const queryClient = new QueryClient();
 
@@ -21,6 +24,9 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/games" element={<Games />} />
+          <Route path="/games/math" element={<MathGame />} />
+          <Route path="/games/daily" element={<DailyChallenge />} />
+          <Route path="/games/tutorials" element={<TutorialPage />} />
           <Route path="/leaderboard" element={<Leaderboard />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="*" element={<NotFound />} />
