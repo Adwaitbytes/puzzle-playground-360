@@ -1,6 +1,5 @@
-
 import { Background } from "@/components/Background";
-import { Puzzle, Calculator, Brain, Gamepad2, BookOpen, Lightbulb, Trophy } from "lucide-react";
+import { ArrowLeft, Puzzle, Calculator, Brain, Gamepad2, BookOpen, Lightbulb, Trophy } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Games = () => {
@@ -11,6 +10,14 @@ const Games = () => {
       icon: Calculator,
       level: "Beginner",
       path: "/games/math",
+      category: "Mathematics",
+    },
+    {
+      title: "Speed Math",
+      description: "Race against time to solve math problems. Improve your mental calculation speed and accuracy.",
+      icon: Gamepad2,
+      level: "Intermediate",
+      path: "/games/speed-math",
       category: "Mathematics",
     },
     {
@@ -28,14 +35,6 @@ const Games = () => {
       level: "Advanced",
       path: "/games/logic",
       category: "Logic",
-    },
-    {
-      title: "Speed Math",
-      description: "Race against time to solve math problems. Improve your mental calculation speed and accuracy.",
-      icon: Gamepad2,
-      level: "Intermediate",
-      path: "/games/speed-math",
-      category: "Mathematics",
     },
     {
       title: "Learn & Practice",
@@ -61,6 +60,11 @@ const Games = () => {
     <main className="min-h-screen relative pt-20">
       <Background />
       <div className="container mx-auto px-4 py-8">
+        <Link to="/" className="flex items-center gap-2 text-accent hover:text-accent-light mb-8">
+          <ArrowLeft className="w-5 h-5" />
+          Back to Home
+        </Link>
+
         <div className="flex items-center justify-between mb-8">
           <h1 className="text-4xl font-bold text-gradient">Available Games</h1>
           <div className="flex items-center gap-2">

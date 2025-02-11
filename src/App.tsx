@@ -12,6 +12,9 @@ import NotFound from "./pages/NotFound";
 import MathGame from "./pages/games/MathGame";
 import DailyChallenge from "./pages/games/DailyChallenge";
 import TutorialPage from "./pages/games/TutorialPage";
+import SpeedMath from "./pages/games/SpeedMath";
+import MemoryMaster from "./pages/games/MemoryMaster";
+import LogicPuzzle from "./pages/games/LogicPuzzle";
 
 const queryClient = new QueryClient();
 
@@ -25,6 +28,9 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/games" element={<Games />} />
           <Route path="/games/math" element={<MathGame />} />
+          <Route path="/games/speed-math" element={<SpeedMath />} />
+          <Route path="/games/memory" element={<MemoryMaster />} />
+          <Route path="/games/logic" element={<LogicPuzzle />} />
           <Route path="/games/daily" element={<DailyChallenge />} />
           <Route path="/games/tutorials" element={<TutorialPage />} />
           <Route path="/leaderboard" element={<Leaderboard />} />

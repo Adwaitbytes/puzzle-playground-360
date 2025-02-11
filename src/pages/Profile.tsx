@@ -1,6 +1,7 @@
 
 import { Background } from "@/components/Background";
-import { Badge, Brain, Star, Trophy } from "lucide-react";
+import { ArrowLeft, Badge, Brain, Star, Trophy } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Profile = () => {
   const userStats = {
@@ -18,6 +19,11 @@ const Profile = () => {
     <main className="min-h-screen relative pt-20">
       <Background />
       <div className="container mx-auto px-4 py-8">
+        <Link to="/" className="flex items-center gap-2 text-accent hover:text-accent-light mb-8">
+          <ArrowLeft className="w-5 h-5" />
+          Back to Home
+        </Link>
+
         <div className="max-w-4xl mx-auto">
           <div className="glass-card p-8 mb-8">
             <div className="flex items-center space-x-4 mb-6">

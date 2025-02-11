@@ -11,27 +11,149 @@ const tutorials = [
     id: 1,
     title: "Basic Mathematics",
     modules: [
-      { id: 1, name: "Addition & Subtraction", content: "Learn the basics of adding and subtracting numbers", completed: false },
-      { id: 2, name: "Multiplication Tables", content: "Master multiplication tables from 1 to 12", completed: false },
-      { id: 3, name: "Division Basics", content: "Understanding division and its applications", completed: false },
+      { 
+        id: 1, 
+        name: "Addition & Subtraction",
+        content: `Let's start with the basics! 
+        
+        Addition (+) is combining numbers together to find their total. For example: 5 + 3 = 8
+        
+        Subtraction (-) is taking away one number from another. For example: 8 - 3 = 5
+        
+        Practice these operations with simple numbers first, then gradually increase difficulty.`,
+        completed: false 
+      },
+      { 
+        id: 2, 
+        name: "Multiplication Tables", 
+        content: `Multiplication is repeated addition. For example:
+        
+        3 × 4 means adding 3 four times: 3 + 3 + 3 + 3 = 12
+        
+        Quick tips for learning multiplication:
+        - Start with 2, 5, and 10 times tables
+        - Use patterns (5× always ends in 0 or 5)
+        - Practice regularly with games and puzzles`,
+        completed: false 
+      },
+      { 
+        id: 3, 
+        name: "Division Basics", 
+        content: `Division is sharing into equal groups. For example:
+        
+        12 ÷ 3 = 4 means splitting 12 into 3 equal groups
+        
+        Remember:
+        - Division is the opposite of multiplication
+        - Can't divide by zero
+        - Use multiplication to check your answer`,
+        completed: false 
+      },
     ],
   },
   {
     id: 2,
     title: "Trigonometry Basics",
     modules: [
-      { id: 4, name: "Understanding Sin, Cos, Tan", content: "Learn about sine, cosine, and tangent in a simple way", completed: false },
-      { id: 5, name: "Right Triangle Basics", content: "How to use trigonometry in right triangles", completed: false },
-      { id: 6, name: "Real-world Applications", content: "Practical uses of trigonometry in daily life", completed: false },
+      { 
+        id: 4, 
+        name: "Understanding Sin, Cos, Tan",
+        content: `Let's make trigonometry simple!
+
+        Picture a right triangle. SOH-CAH-TOA helps remember:
+        
+        Sin = Opposite/Hypotenuse
+        Cos = Adjacent/Hypotenuse
+        Tan = Opposite/Adjacent
+        
+        Common angles to remember:
+        - Sin(30°) = 0.5
+        - Cos(60°) = 0.5
+        - Tan(45°) = 1`,
+        completed: false 
+      },
+      { 
+        id: 5, 
+        name: "Right Triangle Basics",
+        content: `Right triangles are special because:
+        
+        1. They have one 90° angle
+        2. The other two angles add up to 90°
+        3. We can use Pythagoras: a² + b² = c²
+        
+        Example:
+        If a = 3 and b = 4, then
+        c² = 3² + 4² = 9 + 16 = 25
+        So c = 5`,
+        completed: false 
+      },
+      { 
+        id: 6, 
+        name: "Real-world Applications",
+        content: `Trigonometry is everywhere!
+        
+        Examples:
+        1. Finding heights of buildings using shadows
+        2. Navigation in games and maps
+        3. Music (sound waves)
+        4. Architecture
+        
+        Practice: Try measuring the height of a tree using its shadow and the angle of the sun!`,
+        completed: false 
+      },
     ],
   },
   {
     id: 3,
     title: "Advanced Concepts",
     modules: [
-      { id: 7, name: "Fractions & Decimals", content: "Working with fractions and decimal numbers", completed: false },
-      { id: 8, name: "Basic Algebra", content: "Introduction to algebraic expressions", completed: false },
-      { id: 9, name: "Geometry Basics", content: "Understanding shapes and measurements", completed: false },
+      { 
+        id: 7, 
+        name: "Fractions & Decimals",
+        content: `Fractions are parts of a whole. Like slicing a pizza!
+        
+        Converting fractions to decimals:
+        1/2 = 0.5
+        1/4 = 0.25
+        3/4 = 0.75
+        
+        Tips:
+        - Multiply both top and bottom by same number
+        - Use division to convert to decimal
+        - Practice with real objects`,
+        completed: false 
+      },
+      { 
+        id: 8, 
+        name: "Basic Algebra",
+        content: `Algebra is like solving a puzzle where x is the missing piece!
+        
+        Example: x + 5 = 12
+        
+        To solve:
+        1. Subtract 5 from both sides
+        2. x = 7
+        
+        Remember:
+        - What you do to one side, do to the other
+        - Keep equations balanced`,
+        completed: false 
+      },
+      { 
+        id: 9, 
+        name: "Geometry Basics",
+        content: `Geometry is all about shapes and spaces!
+        
+        Key concepts:
+        1. Area of square = side × side
+        2. Area of circle = π × radius²
+        3. Area of triangle = (base × height) ÷ 2
+        
+        Remember:
+        - Angles in a triangle = 180°
+        - Angles in a square = 360°`,
+        completed: false 
+      },
     ],
   },
 ];
