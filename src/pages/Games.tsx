@@ -1,6 +1,17 @@
 
 import { Background } from "@/components/Background";
-import { ArrowLeft, Puzzle, Calculator, Brain, Gamepad2, BookOpen, Lightbulb, Trophy } from "lucide-react";
+import { 
+  ArrowLeft, 
+  Puzzle, 
+  Calculator, 
+  Brain, 
+  Gamepad2, 
+  BookOpen, 
+  Lightbulb, 
+  Trophy,
+  ChartBar,
+  Star
+} from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Games = () => {
@@ -52,6 +63,54 @@ const Games = () => {
       level: "Mixed",
       path: "/games/daily",
       category: "Challenge",
+    },
+    {
+      title: "Word Problems",
+      description: "Practice solving real-world math problems with interactive story-based challenges.",
+      icon: Brain,
+      level: "Intermediate",
+      path: "/games/word-problems",
+      category: "Mathematics",
+    },
+    {
+      title: "Graph Master",
+      description: "Learn and practice graphing concepts through interactive visualization games.",
+      icon: ChartBar,
+      level: "Advanced",
+      path: "/games/graph-master",
+      category: "Mathematics",
+    },
+    {
+      title: "Pattern Quest",
+      description: "Discover and complete mathematical patterns to unlock new challenges.",
+      icon: Puzzle,
+      level: "Beginner",
+      path: "/games/patterns",
+      category: "Logic",
+    },
+    {
+      title: "Math Olympics",
+      description: "Compete in timed math competitions against other players worldwide.",
+      icon: Trophy,
+      level: "Advanced",
+      path: "/games/olympics",
+      category: "Challenge",
+    },
+    {
+      title: "Number Ninja",
+      description: "Master number sense and mental math through fun ninja-themed challenges.",
+      icon: Star,
+      level: "Beginner",
+      path: "/games/number-ninja",
+      category: "Mathematics",
+    },
+    {
+      title: "Geometry Explorer",
+      description: "Interactive geometry puzzles and challenges to understand shapes and spatial relationships.",
+      icon: Puzzle,
+      level: "Intermediate",
+      path: "/games/geometry",
+      category: "Mathematics",
     }
   ];
 

@@ -15,6 +15,12 @@ import TutorialPage from "./pages/games/TutorialPage";
 import SpeedMath from "./pages/games/SpeedMath";
 import MemoryMaster from "./pages/games/MemoryMaster";
 import LogicPuzzle from "./pages/games/LogicPuzzle";
+import WordProblems from "./pages/games/WordProblems";
+import GraphMaster from "./pages/games/GraphMaster";
+import PatternQuest from "./pages/games/PatternQuest";
+import MathOlympics from "./pages/games/MathOlympics";
+import NumberNinja from "./pages/games/NumberNinja";
+import GeometryExplorer from "./pages/games/GeometryExplorer";
 
 const queryClient = new QueryClient();
 
@@ -33,6 +39,12 @@ const App = () => (
           <Route path="/games/logic" element={<LogicPuzzle />} />
           <Route path="/games/daily" element={<DailyChallenge />} />
           <Route path="/games/tutorials" element={<TutorialPage />} />
+          <Route path="/games/word-problems" element={<WordProblems />} />
+          <Route path="/games/graph-master" element={<GraphMaster />} />
+          <Route path="/games/patterns" element={<PatternQuest />} />
+          <Route path="/games/olympics" element={<MathOlympics />} />
+          <Route path="/games/number-ninja" element={<NumberNinja />} />
+          <Route path="/games/geometry" element={<GeometryExplorer />} />
           <Route path="/leaderboard" element={<Leaderboard />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="*" element={<NotFound />} />
